@@ -1,0 +1,553 @@
+
+<!------ Include the above in your HEAD tag ---------->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Andrea Salon Spa</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="v.css">
+  <link rel="icon" type="image/ico" href="Andrea Salon Spa (1).ico">
+  <link rel="stylesheet" href="estilo.css">
+  <link rel="stylesheet" href="CuerpoF">
+  <link rel="stylesheet" href="prueba.css">
+  <link rel="stylesheet" href="estilosMapa.css">
+  <link rel="stylesheet" href="estilopr.css">
+  <link rel="stylesheet" href="estilosfooter.css">
+  <link rel="stylesheet" href="estilosCuerpoimagen.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<style>
+.carousel-inner img {width: 100%; max-height: 720px;}
+/* Carousel Header Styles */
+.header-text {
+    position: absolute;
+    top: 35%;
+    left: 1.8%;
+    right: auto;
+    width: 100%;
+    color: #e2e2e2;
+    font-size:20px; letter-spacing:1px;
+}
+.header-text h2 {font-size: 50px; color:#fff; font-weight:600;}
+.header-text h2 span {padding: 5px;color:orange;}
+.header-text h3 span {padding: 5px;}
+.carousel-control .glyphicon-chevron-right, .fa-angle-right, .carousel-control .icon-next {
+    right:30%;
+    margin-right: -10px;
+}
+.carousel-control .glyphicon-chevron-left, .fa-angle-left, .carousel-control .icon-next {
+    left:30%;
+    margin-left: -10px;
+}
+.carousel-control .glyphicon-chevron-left, .fa-angle-left, .carousel-control .glyphicon-chevron-right, .fa-angle-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    font-size: 25px;
+    background: black;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+	line-height: 30px;
+}
+/*======= media queries in css =======*/
+
+/*////////////// XTRA SMALL DEVICES( mobile phones ) //////////////*/
+@media (min-width: 300px) and (max-width: 479px){  
+.carousel-control .glyphicon-chevron-left, .fa-angle-left, .carousel-control .glyphicon-chevron-right, .fa-angle-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    font-size: 20px;
+    background: black;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 10px;
+}
+.carousel-control .glyphicon-chevron-right, .fa-angle-right, .carousel-control .icon-next {
+    right:30%;
+    margin-right: -10px;
+}
+.carousel-control .glyphicon-chevron-left, .fa-angle-left, .carousel-control .icon-next {
+    left:30%;
+    margin-left: -10px;
+}
+  }
+
+/*////////////// TAB OR LARGE MOBILE PHONE //////////////*/
+@media (min-width: 768px) and (max-width: 991px){  
+.carousel-control .glyphicon-chevron-left, .fa-angle-left, .carousel-control .glyphicon-chevron-right, .fa-angle-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    font-size: 20px;
+    background: black;
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 10px;
+}
+.carousel-control .glyphicon-chevron-right, .fa-angle-right, .carousel-control .icon-next {
+    right:30%;
+    margin-right: -10px;
+}
+.carousel-control .glyphicon-chevron-left, .fa-angle-left, .carousel-control .icon-next {
+    left:30%;
+    margin-left: -10px;
+}
+  }
+
+/*////////////// MEDIUM DEVICES LAPTOPS //////////////*/
+@media (min-width: 992px) and (max-width: 1199px){  
+.carousel-control .glyphicon-chevron-left, .fa-angle-left, .carousel-control .glyphicon-chevron-right, .fa-angle-right, .carousel-control .icon-next, .carousel-control .icon-prev {
+    position: absolute;
+    top: 50%;
+    z-index: 5;
+    display: inline-block;
+    margin-top: -10px;
+    font-size: 20px;
+    background: black;
+    padding: 10px;
+    width:40px;
+    height:40px;
+    line-height: 10px;
+}
+.carousel-control .glyphicon-chevron-right, .fa-angle-right, .carousel-control .icon-next {
+    right:30%;
+    margin-right: -10px;
+}
+.carousel-control .glyphicon-chevron-left, .fa-angle-left, .carousel-control .icon-next {
+    left:30%;
+    margin-left: -10px;
+}
+
+}
+</style>
+</head>
+<body>
+
+<div class="my-carousel">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+  <style>
+  .menu
+  {
+    list-style: none;
+    overflow: hidden;
+    padding: 0;
+    margin:0;
+    background-color: rgba(0,0,0,.7);
+  }
+    .menu li
+    {
+      float: right;
+      
+     
+      
+      color: white;
+      margin-right: 45px;
+    }
+    .menu li a
+    {
+      padding:20px;
+      display: block;
+      text-decoration: none;
+      color: white;
+
+      
+
+    }
+    .menu li a:hover
+    {
+      background-color: white;
+
+      color: black;
+    }
+    .left
+    {
+      float: left;
+    }
+  </style>
+   <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Responsive sidebar template with sliding effect and dropdown menu based on bootstrap 3">
+    <title>Sidebar template</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+ 
+
+</head>
+
+<body>
+  <style>
+    header {
+  width: 100%;
+  display: inline-block;
+  background-color: black;
+}
+
+.hamburger {
+  height: 20px;
+  width: 20px;
+  padding: 20px;
+  float: right;
+  cursor: pointer;
+}
+
+.hamburger:before {
+  content: "";
+  display: block;
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 4px;
+}
+
+.hamburger:after {
+  content: "";
+  display: block;
+  background-color: #f3f3f3;
+  width: 100%;
+  height: 4px;
+  margin-top: 4px;
+  box-shadow: 0px 8px 0 #f3f3f3;
+}
+
+nav {
+  background-color: #2b2b2b;
+  margin: 0;
+  max-height: 0;
+  overflow: hidden;
+  clear:both;
+  transition: max-height .3s cubic-bezier(0.63, 0, 0.25, 1);;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+}
+
+nav li {
+  display: block;
+  margin: 0;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  display: block;
+  padding: .4em;
+}
+
+header input[type="checkbox"]:checked ~ nav {
+  max-height: 150px;
+  border-bottom: #404040 5px solid;
+}
+
+header a:hover,
+header a:focus,
+header label:hover,
+header label:focus {
+  background-color: white;
+  text-decoration: none;
+}
+
+@media (min-width: 700px) {
+  .hamburger {
+    display: none;
+  }
+  nav {
+    background: transparent;
+    float: right;
+    border: 0 !important;
+    max-height: none;
+  }
+  nav ul, nav li, nav li a {
+    display: inline-block;
+  }
+  nav a {
+    display: inline-block;
+    padding: 15px 1em;
+  }
+}
+
+.hidden {
+  position: fixed;
+  top: -100%;
+  left: -100%;
+}
+.izquierda
+{
+  background-color: red;
+}
+
+  </style>
+   <header>
+  <label class="hamburger" for="nav-toggle"></label>
+  <input id="nav-toggle" type="checkbox" class="hidden" />
+  <nav>
+    <ul>
+      <li class="izquierda" style="float: left;"><a href="#">Andrea Salon Spa </a></li>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Contacto</a></li>
+      <li><a href="#">Galeria</a></li>
+      <li><a href="#">Servicio</a></li>
+      <li><a href="#">Maquillaje</a></li>
+      <li><a href="#">Laceado</a></li>
+      <li><a href="#">manicure</a></li>
+    </ul>
+  </nav>
+</header>
+
+                  
+               
+
+    
+    <div class="carousel-inner">
+      
+      <div class="item active">
+
+     <img src="SALON SPA ANDREA/Andrea Salon Spa2.jpg"  alt="" style="height: 700px;opacity: 0.9;">
+
+            <!-- Static Header -->
+                    <div class="header-text text-center hidden-xs" style="margin-top: -70px;">
+                       <div class="main_title" style="margin: 10;float: left;margin-bottom: 25px; color: black;font-weight: bold;font-size: 18px; top: 250px;">
+                      <h2 style="font-weight: bold;color: white;font-size: 45px;" > </h2>
+                      <br>
+                      <br>
+                      <br>
+                       <div class="trasparente" style="background-color: rgba(0,0,0,.1);border-radius: 20px;padding: 12px;"><p style="border-top: solid white 2px;border-bottom: solid white 2px;color: white; ">Somos Andrea Salon & Spa</p>
+                         <p style="font-size: 28px;">Somos Andrea Salon & Spa venimos A complacerte </p>
+                        
+                          </div>
+                               <br><br>
+                     
+                     </div>  
+                 <div class="">
+                  <br>
+                               
+                            </div>
+              
+                    </div>
+                              
+      </div>
+
+      <div class="item">
+         <img src="SALON SPA ANDREA/Presentacion.jpg"  alt="" style="height: 700px;opacity: 0.8;">
+            <!-- Static Header -->
+                    <div class="header-text text-center hidden-xs" style="margin-top: -70px;">
+                       <div class="main_title" style="margin: 10;float: left;margin-bottom: 25px; color: black;font-weight: bold;font-size: 18px; top: 250px;">
+                      <h2 style="font-weight: bold;color: white;font-size: 45px;" > <b> </b> </h2>
+                      <p></p>
+                      <p></p>
+                      <p></p>
+                      <br>
+                        <div class="trasparente" style="background-color: rgba(0,0,0,.1);border-radius: 20px;padding: 12px;"><p style="border-top: solid white 2px;border-bottom: solid white 2px;color: white; ">Andrea Salon & spa</p>
+                          <p style="border-top: solid white 2px;border-bottom: solid white 2px;color: white; ">Horarios</p>
+                         <p>Lunes : 10 am - 10 pm</p>
+                          <p>Martes : 10 am - 10 pm</p>
+                          <p>Miercoles: 10 am - 10 pm</p>
+                            <p>Jueves : 10 am - 10 pm</p>
+                             <p>Viernes : 10 am - 10 pm</p>
+                              <p>Sabado : 10 am - 10 pm</p>
+                               <p>Domingo : 10 am - 10 pm</p></div>
+                               <br><br>
+                      <a href="" style="background-color: #135E9C;color: white;padding: 12px;border-radius: 7px;color: white;">Visita Nuestra Galeria</a><br>
+                   
+                     </div>  
+                 <div class="">
+                  <br>
+                               
+                            </div>
+              
+                    </div>
+          </div>
+    
+      <div class="item">
+       
+         <a  href="https://www.behance.net/sakiran" target="_blank" style="opacity: 0.9;">
+        <img src="SALON SPA ANDREA/Depilaciones Hindu Cejas Bozo.jpg" alt="Image-3" style="width:100%;height: 680px;">
+        </a>
+      </div>
+    </div>
+
+
+    <!-- Left and right controls -->
+    
+  </header>
+  
+  <br><br>
+  <h2 align="center" style="border-bottom: 9px;">Nuestros Servicios[Andrea Salon & Spa]</h2>
+  <p style="margin: 80px;font-size: 16px;font-weight: bold;">Un nuevo concepto en salones de belleza y spa
+Donde encontrarás a los mejores profesionales para brindarte un servicio inigualable, en un ambiente moderno con toda las comodidades que necesitas a precios accesibles.</p>
+<hr style="background-color: gray;font-size: 22px;">
+  <div class="w3-row-padding w3-center" style="margin: 80px; ">
+    <style>
+      .hover
+      {
+        border-top: 2px solid red;
+
+      }
+      .hover:hover
+      {
+        border-bottom: 5px solid black;
+      }
+    </style>
+    <div class="w3-col m3 ">
+      <img src="SALON SPA ANDREA/Peinados.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity hover" alt="The mist over the mountains">
+      <br>
+      <p style="font-weight: bold;font-size: 15px;">Peinados</p>
+       <p id="descripcion">Nosotros Contamos Con Un gran Servicio en Maquillaje.</p>
+    </div>
+
+    <div class="w3-col m3 ">
+      <img src="SALON SPA ANDREA/DemoAndreaSalonSpa(Maquillaje).jpg " style="width:100%" onclick="onClick(this)" class="w3-hover-opacity hover" alt="Coffee beans">
+      <br>
+      <p style="font-weight: bold;font-size: 15px;">Maquillaje</p>
+     
+       <p id="descripcion">Nosotros Contamos Con Un gran Servicio en Maquillaje.</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="SALON SPA ANDREA/Manicure+Pedicure.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity hover" alt="Bear closeup"><br>
+      <p style="font-weight: bold;font-size: 15px;">Pedicure</p> <p id="descripcion">Nosotros Contamos Con Un gran Servicio en Maquillaje.</p>
+    </div>
+
+    <div class="w3-col m3">
+      <img src="SALON SPA ANDREA/Depilaciones Hindu Cejas Bozo.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity hover" alt="Quiet ocean"><br>
+      <p style="font-weight: bold;font-size: 15px;">Peinados</p>
+       <p id="descripcion">Nosotros Contamos Con Un gran Servicio en Maquillaje.</p>
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section " style="margin: 80px;" >
+    <div class="w3-col m3">
+      <img src="SALON SPA ANDREA/Peinados.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="SALON SPA ANDREA/Peinados.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="SALON SPA ANDREA/Peinados.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="SALON SPA ANDREA/Peinados.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+    </div>
+
+  </div>
+
+   
+    </div>
+  </div>
+</div>
+  </section>
+<div class="container-fluid">
+  <hr>
+<h1 class="text-center">Contacto Andrea Salon Spa</h1>
+<p align="center" style="font-size: 12px;color: black;font-weight: bold;color: red;">Telefono :987654321</p>
+<hr>
+ <div class="row">
+  <iframe src="https://maps.google.com/maps?width=100%&height=800&hl=es&coord=-12.0393788,-77.0905607&q=carmen%20de%20la%20legua+(Mi%20nombre%20de%20egocios)&ie=UTF8&t=&z=14&iwloc=B&output=embed" width="100%" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+ </div>
+ 
+</div>
+
+
+
+<div class="row text-center bg-success text-white" id="author">
+ 
+
+</div>
+
+
+<div class="col-12 my-2">
+<a href="https://www.linkedin.com/in/paolofattoruso/" target="_blank"><i class="fab fa-linkedin fa-3x"></i></a>
+</div>
+</div>
+
+<!-- Footer -->
+  <section id="footer">
+    <div class="container">
+      <div class="row text-center text-xs-center text-sm-left text-md-left">
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Paginas Principales</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Inicio</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Acerca de </a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Galeria</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Contacto</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Redes Sociales</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Inicio</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Instagram</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Facebook</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Videos</a></li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-4">
+          <h5>Quick links</h5>
+          <ul class="list-unstyled quick-links">
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Home</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>About</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>FAQ</a></li>
+            <li><a href="javascript:void();"><i class="fa fa-angle-double-right"></i>Get Started</a></li>
+            <li><a href="https://wwwe.sunlimetech.com" title="Design and developed by"><i class="fa fa-angle-double-right"></i>Imprint</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-5">
+          <ul class="list-unstyled list-inline social text-center">
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-facebook"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-twitter"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-instagram"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();"><i class="fa fa-google-plus"></i></a></li>
+            <li class="list-inline-item"><a href="javascript:void();" target="_blank"><i class="fa fa-envelope"></i></a></li>
+          </ul>
+        </div>
+        </hr>
+      </div>  
+      <div class="row">
+        <div class="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+          <p><u><a href="https://www.nationaltransaction.com/">Andrea Salon Spa</a></u> is ©Copyright Lima Peru [Te Ofrecemos un gran servicio Y gran Estilo]</p>
+          <p class="h6">Pagina Andrea Salon Spa<a class="text-green ml-2" href="https://www.sunlimetech.com" target="_blank">Oficial</a></p>
+        </div>
+        </hr>
+      </div>  
+    </div>
+  </section>
+  <!-- ./Footer -->
+  <script src="prueba.js"></script>
+  <script src="jsc.js"></script>
+</body>
+</html>
